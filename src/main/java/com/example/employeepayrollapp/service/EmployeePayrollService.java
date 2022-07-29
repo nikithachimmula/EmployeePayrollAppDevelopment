@@ -8,43 +8,39 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class EmployeePayrollService implements IEmployeeRollService{
+public class EmployeePayrollService implements IEmployeeRollService {
 
+    private List<EmployeePayrollData> employeePayrollList = new ArrayList<>();
 
     @Override
     public List<EmployeePayrollData> getEmployeePayrollData() {
-        List<EmployeePayrollData> empDataList = new ArrayList<>();
-        empDataList.add(new EmployeePayrollData(101, new EmployeePayrollDTO("Nikitha", 50000)));
-
-        return empDataList;
+        return employeePayrollList;
     }
 
     @Override
     public EmployeePayrollData getEmployeePayrollDataById(int empId) {
-        EmployeePayrollData empData = null;
-        empData = new EmployeePayrollData(101, new EmployeePayrollDTO("Nikitha", 50000));
-
-        return empData;
+        return employeePayrollList.get(empId-1);
     }
 
     @Override
     public EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
-        EmployeePayrollData empData = null;
-        empData = new EmployeePayrollData(101, employeePayrollDTO);
-
-        return empData;
+        EmployeePayrollData employeePayrollData= null;
+        employeePayrollData = new EmployeePayrollData(1, employeePayrollDTO);
+        employeePayrollList.add(employeePayrollData);
+        return employeePayrollData;
     }
 
     @Override
-    public EmployeePayrollData updateEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
-        EmployeePayrollData empData = null;
-        empData = new EmployeePayrollData(101, employeePayrollDTO);
-
+    public EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO employeePayrollDTO) {
+        EmployeePayrollData empData=this.getEmployeePayrollDataById(empId);
+        empData.setName(employeePayrollDTO.name);
+        empData.setSalary(employeePayrollDTO.salary);
+        employeePayrollList.set(empId-1,empData);
         return empData;
     }
 
     @Override
     public void deleteEmployeePayrollData(int empId) {
-
+        employeePayrollList.remove(empId-1);
     }
 }
