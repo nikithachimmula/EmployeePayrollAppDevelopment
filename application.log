@@ -1764,3 +1764,10 @@ java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
 2022-2022-07 22:16 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-2022-07 22:16 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 5.098 seconds (JVM running for 6.394)
 2022-2022-07 22:16 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
+2022-2022-07 22:34 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 6172 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-2022-07 22:34 [DEBUG][restartedMain][c.e.e.EmployeePayrollApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 22:34 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:640] The following 1 profile is active: "Dev"
+2022-2022-07 22:34 [WARN][restartedMain][c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-2022-07 22:34 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 22:34 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 4.951 seconds (JVM running for 6.177)
+2022-2022-07 22:34 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
