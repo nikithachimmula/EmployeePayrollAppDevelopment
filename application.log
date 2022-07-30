@@ -1,0 +1,7 @@
+2022-07-30 12:09:57.867  INFO 15080 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 15080 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-07-30 12:09:57.883 DEBUG 15080 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-07-30 12:09:57.891  INFO 15080 --- [restartedMain] c.e.e.EmployeePayrollApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-30 12:10:03.360  WARN 15080 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-30 12:10:08.193  WARN 15080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-30 12:10:09.929  INFO 15080 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 13.464 seconds (JVM running for 18.968)
+2022-07-30 12:10:09.958  INFO 15080 --- [restartedMain] c.e.e.EmployeePayrollApplication         : Employee Payroll Application Started in COMMON Environment
