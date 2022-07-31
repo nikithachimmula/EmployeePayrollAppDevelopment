@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Null;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,6 +38,14 @@ public class EmployeePayrollController {
         return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
     }
 
+    @GetMapping("/department/{departments}")
+    public ResponseEntity<ResponseDTO> getEmployeePayrollData(@PathVariable("departments")String departments){
+        List<EmployeePayrollData> employeePayrollDataList = null;
+        employeePayrollDataList= employeeRollService.getEmployeeByDepartments(departments);
+        ResponseDTO responseDTO = new ResponseDTO("Get Call for Id successful", employeePayrollDataList);
+        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
+
+    }
 
     @PostMapping("/create")
     public ResponseEntity<ResponseDTO> addEmployeePayrollData(@Valid @RequestBody EmployeePayrollDTO employeePayrollDTO) {

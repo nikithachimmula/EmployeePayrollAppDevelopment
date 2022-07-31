@@ -2110,3 +2110,77 @@ javax.validation.UnexpectedTypeException: HV000030: No validator could be found 
 2022-2022-07 16:17 [DEBUG][http-nio-8080-exec-2][c.e.e.s.EmployeePayrollService:34] Emp Data:EmployeePayrollData(employeeId=0, name=Navneet, salary=80000, gender=male, startDate=2020-05-22, note=Surakshith, profilePic=../assets/profile-images/Ellipse -3.png, departments=[si, HR])
 2022-2022-07 16:19 [WARN][http-nio-8080-exec-4][o.s.w.s.m.s.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
 2022-2022-07 16:19 [WARN][http-nio-8080-exec-5][o.s.w.s.m.s.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2022-2022-07 17:25 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 15056 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-2022-07 17:25 [DEBUG][restartedMain][c.e.e.EmployeePayrollApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 17:25 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:640] The following 1 profile is active: "Dev"
+2022-2022-07 17:25 [WARN][restartedMain][c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-2022-07 17:25 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 17:25 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 6.706 seconds (JVM running for 9.347)
+2022-2022-07 17:25 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
+2022-2022-07 17:27 [ERROR][http-nio-8080-exec-5][o.a.c.c.C.[.[.[.[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/employeepayrollservice/get/HR': {public org.springframework.http.ResponseEntity com.example.employeepayrollapp.controller.EmployeePayrollController.getEmployeePayrollData(java.lang.String), public org.springframework.http.ResponseEntity com.example.employeepayrollapp.controller.EmployeePayrollController.getEmployeePayrollData(int)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/employeepayrollservice/get/HR': {public org.springframework.http.ResponseEntity com.example.employeepayrollapp.controller.EmployeePayrollController.getEmployeePayrollData(java.lang.String), public org.springframework.http.ResponseEntity com.example.employeepayrollapp.controller.EmployeePayrollController.getEmployeePayrollData(int)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1264)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1046)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-2022-07 17:28 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 15056 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-2022-07 17:28 [DEBUG][restartedMain][c.e.e.EmployeePayrollApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 17:28 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:640] The following 1 profile is active: "Dev"
+2022-2022-07 17:28 [WARN][restartedMain][c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-2022-07 17:28 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 17:28 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 1.154 seconds (JVM running for 218.021)
+2022-2022-07 17:28 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
+2022-2022-07 17:28 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 15056 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-2022-07 17:28 [DEBUG][restartedMain][c.e.e.EmployeePayrollApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 17:28 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:640] The following 1 profile is active: "Dev"
+2022-2022-07 17:28 [WARN][restartedMain][c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-2022-07 17:28 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 17:28 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 1.202 seconds (JVM running for 224.75)
+2022-2022-07 17:28 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
+2022-2022-07 17:28 [WARN][http-nio-8080-exec-2][o.s.w.s.m.s.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "HR"]
+2022-2022-07 17:28 [WARN][http-nio-8080-exec-4][o.s.w.s.m.s.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "HR"]
+2022-2022-07 17:30 [WARN][http-nio-8080-exec-10][o.s.w.s.m.s.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-2022-07 17:30 [WARN][http-nio-8080-exec-1][o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:208] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.employeepayrollapp.dto.ResponseDTO> com.example.employeepayrollapp.controller.EmployeePayrollController.addEmployeePayrollData(com.example.employeepayrollapp.dto.EmployeePayrollDTO): [Field error in object 'employeePayrollDTO' on field 'name': rejected value [Navneet01]; codes [Pattern.employeePayrollDTO.name,Pattern.name,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeePayrollDTO.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@761d0ea3,^[A-Z]{1}[a-zA-Z\s]{2,}$]; default message [Employee name Invalid]] ]
+2022-2022-07 17:31 [DEBUG][http-nio-8080-exec-3][c.e.e.s.EmployeePayrollService:39] Emp Data:EmployeePayrollData(employeeId=0, name=NavneetKumar, salary=80000, gender=male, startDate=2020-05-22, note=Surakshith, profilePic=../assets/profile-images/Ellipse -3.png, departments=[si])
