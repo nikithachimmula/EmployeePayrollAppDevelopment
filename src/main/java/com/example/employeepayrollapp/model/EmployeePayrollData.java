@@ -3,7 +3,6 @@ package com.example.employeepayrollapp.model;
 import com.example.employeepayrollapp.dto.EmployeePayrollDTO;
 import lombok.Data;
 
-import javax.naming.Name;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -29,9 +28,14 @@ public class EmployeePayrollData {
     private List<String> departments;
 
     public EmployeePayrollData() {
+
+    }
+    public EmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
+        this.updateEmployeePayrollData(employeePayrollDTO);
     }
 
-    public EmployeePayrollData(EmployeePayrollDTO empPayrollDTO) {
+
+    public void updateEmployeePayrollData(EmployeePayrollDTO empPayrollDTO) {
         this.name = empPayrollDTO.name;
         this.salary = empPayrollDTO.salary;
         this.gender = empPayrollDTO.gender;
