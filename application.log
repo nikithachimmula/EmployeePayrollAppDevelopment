@@ -107,3 +107,45 @@ Caused by: java.time.format.DateTimeParseException: Text '22 Ma 2022' could not 
 	at com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer._fromString(LocalDateDeserializer.java:170)
 	... 60 common frames omitted
 2022-2022-07 12:29 [WARN][http-nio-8080-exec-3][o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:208] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "22 Ma 2022": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '22 Ma 2022' could not be parsed at index 3; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDate` from String "22 Ma 2022": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '22 Ma 2022' could not be parsed at index 3<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 7, column: 19] (through reference chain: com.example.employeepayrollapp.dto.EmployeePayrollDTO["startDate"])]
+2022-2022-07 13:18 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 12476 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-2022-07 13:18 [DEBUG][restartedMain][c.e.e.EmployeePayrollApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 13:18 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:640] The following 1 profile is active: "Dev"
+2022-2022-07 13:18 [WARN][restartedMain][c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-2022-07 13:18 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 13:18 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 15.414 seconds (JVM running for 19.074)
+2022-2022-07 13:18 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
+2022-2022-07 13:26 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 12128 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-2022-07 13:26 [DEBUG][restartedMain][c.e.e.EmployeePayrollApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 13:26 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:640] The following 1 profile is active: "Dev"
+2022-2022-07 13:26 [WARN][restartedMain][c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-2022-07 13:26 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 13:26 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 7.171 seconds (JVM running for 8.671)
+2022-2022-07 13:26 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
+2022-2022-07 13:31 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 15584 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-2022-07 13:31 [DEBUG][restartedMain][c.e.e.EmployeePayrollApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 13:31 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:640] The following 1 profile is active: "Dev"
+2022-2022-07 13:31 [WARN][restartedMain][c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-2022-07 13:31 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 13:31 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 5.762 seconds (JVM running for 7.136)
+2022-2022-07 13:31 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
+2022-2022-07 13:32 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 13144 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-2022-07 13:32 [DEBUG][restartedMain][c.e.e.EmployeePayrollApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 13:32 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:640] The following 1 profile is active: "Dev"
+2022-2022-07 13:32 [WARN][restartedMain][c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-2022-07 13:32 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 13:32 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 7.598 seconds (JVM running for 8.954)
+2022-2022-07 13:32 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
+2022-2022-07 13:59 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 9712 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-2022-07 13:59 [DEBUG][restartedMain][c.e.e.EmployeePayrollApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 13:59 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:640] The following 1 profile is active: "Dev"
+2022-2022-07 13:59 [WARN][restartedMain][c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-2022-07 13:59 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 13:59 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 9.161 seconds (JVM running for 11.463)
+2022-2022-07 13:59 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
+2022-2022-07 14:01 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 18.0.2 on LAPTOP-JGIGE0P2 with PID 2292 (C:\CFP FullStack\EmployeePayrollApp\target\classes started by HP in C:\CFP FullStack\EmployeePayrollApp)
+2022-2022-07 14:01 [DEBUG][restartedMain][c.e.e.EmployeePayrollApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 14:01 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:640] The following 1 profile is active: "Dev"
+2022-2022-07 14:01 [WARN][restartedMain][c.z.h.u.DriverDataSource:70] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-2022-07 14:01 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 14:01 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 8.12 seconds (JVM running for 9.652)
+2022-2022-07 14:01 [INFO][restartedMain][c.e.e.EmployeePayrollApplication:14] Employee Payroll Application Started in DEV Environment
