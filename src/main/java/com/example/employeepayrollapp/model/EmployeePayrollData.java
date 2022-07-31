@@ -27,7 +27,7 @@ public class EmployeePayrollData {
         this.gender = empPayrollDTO.gender;
         this.note = empPayrollDTO.note;
         this.startDate = empPayrollDTO.startDate;
-        this.profilePic = empPayrollDTO.profilepic;
-        this.departments = empPayrollDTO.department;
+        this.profilePic = empPayrollDTO.profilePic;
+        this.departments = empPayrollDTO.departments;
     }
 }

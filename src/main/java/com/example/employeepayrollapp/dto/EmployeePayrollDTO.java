@@ -21,24 +21,10 @@ public @ToString class EmployeePayrollDTO {
     @NotNull(message = "StartDate Should Not be Empty")
     @PastOrPresent(message = "startDate should be past or todays date")
     public LocalDate startDate;
-    @NotBlank(message = "Note cannot be Empty")
+    //@NotBlank(message = "Note cannot be Empty")
     public String note;
-    @NotBlank(message = "profilepic cannot be Empty")
-    public String profilepic;
-    @NotBlank(message = "Department should not be Empty")
-    public List<String> department;
-
-    public EmployeePayrollDTO(String name, long salary) {
-        this.name = name;
-        this.salary = salary;
-
-    }
-
-    @Override
-    public String toString() {
-        return "EmployeePayrollDTO{" +
-                "name='" + name + '\'' +
-                ", salary=" + salary +
-                '}';
-    }
+   // @NotBlank(message = "profilepic cannot be Empty")
+    public String profilePic;
+    //@NotBlank(message = "Department should not be Empty")
+    public List<String> departments;
 }

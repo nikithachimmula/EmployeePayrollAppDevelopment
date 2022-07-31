@@ -29,7 +29,7 @@ public class EmployeePayrollService implements IEmployeeRollService {
     @Override
     public EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
         EmployeePayrollData employeePayrollData= null;
-        employeePayrollData = new EmployeePayrollData(1, employeePayrollDTO);
+        employeePayrollData = new EmployeePayrollData(employeePayrollList.size()+1, employeePayrollDTO);
         employeePayrollList.add(employeePayrollData);
         return employeePayrollData;
     }
@@ -39,6 +39,11 @@ public class EmployeePayrollService implements IEmployeeRollService {
         EmployeePayrollData empData=this.getEmployeePayrollDataById(empId);
         empData.setName(employeePayrollDTO.name);
         empData.setSalary(employeePayrollDTO.salary);
+        empData.setGender(employeePayrollDTO.gender);
+        empData.setStartDate(employeePayrollDTO.startDate);
+        empData.setNote(employeePayrollDTO.note);
+        empData.setProfilePic(employeePayrollDTO.profilePic);
+        empData.setDepartments(employeePayrollDTO.departments);
         employeePayrollList.set(empId-1,empData);
         return empData;
     }
